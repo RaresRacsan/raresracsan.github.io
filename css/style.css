@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: sticky;
+    float: right;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: rgba(33, 33, 33, 0.8);
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: rgb(57, 57, 57);
+    border-radius: 20px;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #dfdfdf;
+    margin-bottom: 100px;
+    margin-top: 0px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 20px 0 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+.hero .button {
+    margin-top: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.hero .button:hover {
+    background-color: #444;
+}
+
+.hero .button i {
+    margin-left: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-top: 50px;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 60px; /* Adjust for smaller screens */
+    }
+}
+
+.about-section card{
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin: 0;
+}
+
+.card .button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card .button:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+.card .button i {
+    margin-left: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+}
+
+.contact-section li {
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
