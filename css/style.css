@@ -8,7 +8,7 @@
 body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f4e3
+    background-color: #faf3dd; /* Very light cream */
 }
 
 /* Header styling */
@@ -28,7 +28,7 @@ header {
     display: inline-block;
     padding: 10px 15px;
     border-radius: 25px;
-    background-color: #333333
+    background-color: #8a5a44; /* Warm brown */
 }
 
 .navbar li {
@@ -44,35 +44,35 @@ header {
 }
 
 .navbar li a:hover {
-    background-color: #3e3e3e;
+    background-color: #b97f5d; /* Lighter brown on hover */
     border-radius: 20px;
 }
 
-/* Hero section with pastel color */
+/* Hero section with soft pastel color */
 .hero {
     text-align: center;
     padding: 150px 20px;
-    background-color: #f0e4d7; /* Soft peach */
-    color: #4a4a4a;
+    background-color: #ffedd5; /* Light peach */
+    color: #4a4a4a; /* Dark gray text */
     margin-bottom: 0;
 }
 
 .hero h1 {
     font-size: 36px;
-    color: #3d3d3d;
+    color: #333333; /* Darker gray for contrast */
 }
 
 .hero p {
     font-size: 18px;
-    color: #666;
+    color: #666666; /* Medium gray for readability */
 }
 
-/* Button styling with icon alignment */
+/* Button styling with lighter colors */
 .hero .button {
     margin-top: 40px;
     border: none;
     border-radius: 25px;
-    background-color: #7aa9f2; /* Soft blue */
+    background-color: #fca982; /* Soft orange */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -83,7 +83,7 @@ header {
 }
 
 .hero .button:hover {
-    background-color: #6891cc;
+    background-color: #e18b65; /* Darker orange on hover */
 }
 
 .hero .button i {
@@ -103,20 +103,22 @@ header {
 /* About Section */
 .about-section {
     text-align: center;
-    padding: 280px;
-    background-color: #ffe4e1; /* Light pink */
-    color: #4a4a4a;
+    height: 100vh; /* Full-screen height */
+    padding: 80px 20px;
+    background-color: #ffe7cc; /* Light apricot */
+    color: #4a4a4a; /* Dark gray text */
     margin-bottom: 0;
 }
 
 .about-section h2 {
+    margin-top: 150px;
     font-size: 36px;
-    color: #3d3d3d;
+    color: #333333; /* Dark gray for contrast */
 }
 
 .about-section p {
     font-size: 18px;
-    color: #666;
+    color: #666666; /* Medium gray */
 }
 
 /* Button styling for About Section */
@@ -124,7 +126,7 @@ header {
     margin-top: 40px;
     border: none;
     border-radius: 25px;
-    background-color: #ff6f61; /* Coral */
+    background-color: #ffab76; /* Lighter coral */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -134,26 +136,28 @@ header {
 }
 
 .about-section .button:hover {
-    background-color: #e65c50; /* Darker coral on hover */
+    background-color: #e69561; /* Darker coral on hover */
 }
 
 /* Projects Section */
 .projects-section {
     text-align: center;
-    padding: 280px;
-    background-color: #d1e7dd; /* Light green */
-    color: #4a4a4a;
+    height: 100vh; /* Full-screen height */
+    padding: 80px 20px;
+    background-color: #ffe3bf; /* Soft pastel beige */
+    color: #4a4a4a; /* Dark gray text */
     margin-bottom: 0;
 }
 
 .projects-section h2 {
+    margin-top: 150px;
     font-size: 36px;
-    color: #3d3d3d;
+    color: #333333; /* Darker gray for contrast */
 }
 
 .projects-section p {
     font-size: 18px;
-    color: #666;
+    color: #666666; /* Medium gray */
 }
 
 /* Button styling for Projects Section */
@@ -161,7 +165,7 @@ header {
     margin-top: 40px;
     border: none;
     border-radius: 25px;
-    background-color: #198754; /* Green for Projects section button */
+    background-color: #f7b993; /* Soft pastel coral */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -171,7 +175,7 @@ header {
 }
 
 .projects-section .button:hover {
-    background-color: #157347; /* Darker green on hover */
+    background-color: #e7a37c; /* Slightly darker pastel coral on hover */
 }
 
 .about-section .button i,
@@ -181,7 +185,7 @@ header {
 
 /* Contact Section */
 .contact-section {
-    background-color: #7aa9f2;
+    background-color: #dca982; /* Warm pastel beige */
     color: white;
     padding: 30px 20px;
     text-align: center;

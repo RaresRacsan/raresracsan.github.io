@@ -14,12 +14,12 @@ body {
 .slideshow-container {
     position: relative;
     max-width: 900px;
-    margin: auto;
+    margin: 0px auto;
     padding: 20px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: 400px; /* Fixed height */
+    height: 500px; /* Fixed height */
 }
 
 /* Individual Slide */
@@ -104,15 +104,16 @@ body {
     background-color: transparent;
     font-size: 30px;
     border: none;
-    transform: translateY(-50%);
+    transform: translateY(-50%); 
+    z-index: 1; 
 }
 
 .prev {
-    left: 15px;
+    left: 10px;
 }
 
 .next {
-    right: 15px;
+    right: 10px; /
 }
 
 /* Bullets Section */
