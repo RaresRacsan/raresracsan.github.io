@@ -1,3 +1,4 @@
+/* General reset and body styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,10 @@
 body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
+    background-color: #f8f4e3
 }
 
+/* Header styling */
 header {
     position: sticky;
     float: right;
@@ -25,7 +28,7 @@ header {
     display: inline-block;
     padding: 10px 15px;
     border-radius: 25px;
-    background-color: rgba(33, 33, 33, 0.8);
+    background-color: #333333
 }
 
 .navbar li {
@@ -41,22 +44,22 @@ header {
 }
 
 .navbar li a:hover {
-    background-color: rgb(57, 57, 57);
+    background-color: #3e3e3e;
     border-radius: 20px;
 }
 
-/* Hero section */
+/* Hero section with pastel color */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #dfdfdf;
+    background-color: #f0e4d7; /* Soft peach */
+    color: #4a4a4a;
     margin-bottom: 100px;
-    margin-top: 0px;
 }
 
 .hero h1 {
     font-size: 36px;
-    margin: 20px 0 10px;
+    color: #3d3d3d;
 }
 
 .hero p {
@@ -64,11 +67,64 @@ header {
     color: #666;
 }
 
+/* Button styling with icon alignment */
 .hero .button {
     margin-top: 40px;
     border: none;
     border-radius: 25px;
-    background-color: #333;
+    background-color: #7aa9f2; /* Soft blue */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.hero .button:hover {
+    background-color: #6891cc;
+}
+
+.hero .button i {
+    margin-left: 10px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-top: 50px;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 150px 20px;
+    background-color: #ffe4e1; /* Light pink */
+    color: #4a4a4a;
+    margin-bottom: 100px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    color: #3d3d3d;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Button styling for About Section */
+.about-section .button {
+    margin-top: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff6f61; /* Coral */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -77,88 +133,55 @@ header {
     align-items: center;
 }
 
-.hero .button:hover {
-    background-color: #444;
+.about-section .button:hover {
+    background-color: #e65c50; /* Darker coral on hover */
 }
 
-.hero .button i {
-    margin-left: 10px;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    margin-top: 50px;
-}
-
-section {
-    scroll-margin-top: 100px;
-}
-
-/* Media Queries for smaller devices */
-@media (max-width: 768px) {
-    section {
-        scroll-margin-top: 60px; /* Adjust for smaller screens */
-    }
-}
-
-.about-section card{
-    margin-top: 40px;
-}
-
-.card {
-    background-color: #fff;
-    padding: 15px;
-    margin: 20px auto;
-    margin-bottom: 100px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-}
-
-.card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 16px;
-    color: #555;
+/* Projects Section */
+.projects-section {
     text-align: center;
-    margin: 0;
+    padding: 150px 20px;
+    background-color: #d1e7dd; /* Light green */
+    color: #4a4a4a;
+    margin-bottom: 100px;
 }
 
-.card .button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+.projects-section h2 {
+    font-size: 36px;
+    color: #3d3d3d;
+}
+
+.projects-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Button styling for Projects Section */
+.projects-section .button {
+    margin-top: 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    background-color: #198754; /* Green for Projects section button */
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px 20px;
     font-size: 14px;
+    display: inline-flex;
+    align-items: center;
 }
 
-.card .button:hover {
-    background-color: #444;
-    cursor: pointer;
+.projects-section .button:hover {
+    background-color: #157347; /* Darker green on hover */
 }
 
-.card .button i {
+.about-section .button i,
+.projects-section .button i {
     margin-left: 10px;
 }
 
 /* Contact Section */
 .contact-section {
-    background-color: #333;
+    background-color: #7aa9f2; /* Soft blue */
     color: white;
     padding: 30px 20px;
     text-align: center;
