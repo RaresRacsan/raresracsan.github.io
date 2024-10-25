@@ -51,10 +51,10 @@ header {
 /* Hero section with pastel color */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 150px 20px;
     background-color: #f0e4d7; /* Soft peach */
     color: #4a4a4a;
-    margin-bottom: 100px;
+    margin-bottom: 0;
 }
 
 .hero h1 {
@@ -93,20 +93,20 @@ header {
 /* Profile Picture */
 .profile-pic {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border: 3px solid white;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 /* About Section */
 .about-section {
     text-align: center;
-    padding: 150px 20px;
+    padding: 280px;
     background-color: #ffe4e1; /* Light pink */
     color: #4a4a4a;
-    margin-bottom: 100px;
+    margin-bottom: 0;
 }
 
 .about-section h2 {
@@ -140,10 +140,10 @@ header {
 /* Projects Section */
 .projects-section {
     text-align: center;
-    padding: 150px 20px;
+    padding: 280px;
     background-color: #d1e7dd; /* Light green */
     color: #4a4a4a;
-    margin-bottom: 100px;
+    margin-bottom: 0;
 }
 
 .projects-section h2 {
