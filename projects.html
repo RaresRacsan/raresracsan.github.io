@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="projects" class="projects-section card">
+        <!--Slideshow Container-->
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="text-content">
+                        <h3>Project 1</h3>
+                        <div class="icon-container">
+                            <span>Made with:</span>
+                            <i class="fab fa-js icon" title="JavaScript"></i>
+                            <i class="fab fa-html5 icon" title="HTML5"></i>
+                        </div>
+                        <p>Description for project 1. This is a brief overview of what the project does and technologies used.</p>
+                        <a href="https://github.com/username/project1" class="btn-github">View on GitHub</a>
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/download.jfif" alt="Project1">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="text-content">
+                        <h3>Project 2</h3>
+                        <div class="icon-container">
+                            <span>Made with:</span>
+                            <i class="fab fa-python icon" title="Python"></i>
+                            <i class="fab fa-flask icon" title="Flask"></i>
+                        </div>
+                        <p>Description for project 2. Brief details about what it does and the tools and frameworks used.</p>
+                        <a href="https://github.com/username/project2" class="btn-github">View on GitHub</a>
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/project2.jpg" alt="Project2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more slides as necessary -->
+        </div>
+
+        <!-- Bullet Indicators -->
+        <div class="bullets">
+            <span class="bullet" onclick="currentSlide(1)"></span>
+            <span class="bullet" onclick="currentSlide(2)"></span>
+            <!-- Add bullets based on the number of slides -->
+        </div>
+
+        <!-- Previous and next buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <!-- Contact me section -->
+    <footer class="contact-section">
+        <h2>Contact Me</h2>
+        <ul>
+            <li>Phone: (+40) 755 037 400</li>
+            <li>Email: <a href="mailto:rares.racsan@gmail.com">rares.racsan@gmail.com</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/raresracsan/" target="_blank">@raresracsan</a></li>
+        </ul>
+    </footer>
+    <script src="/js/projects.js"></script>
+</body>
+
+</html>
