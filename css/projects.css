@@ -79,7 +79,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%; /* Ensures slide content fills the height */
+    height: 100%;
+    /* Ensures slide content fills the height */
 }
 
 /* Hover Card Styling */
@@ -102,7 +103,8 @@ body {
 /* Show hover card on slide hover */
 .slide:hover .hover-card {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1); /* Expand to normal size */
+    transform: translate(-50%, -50%) scale(1);
+    /* Expand to normal size */
 }
 
 /* Project Name in Hover Card */
@@ -132,13 +134,14 @@ body {
     color: #555;
     line-height: 1.4;
     text-align: center;
-} 
+}
 
 /* Text Section */
 .text-content {
     flex: 1;
     margin-right: 20px;
-    overflow: hidden; /* Hides overflowing text */
+    overflow: hidden;
+    /* Hides overflowing text */
 }
 
 .text-content h3 {
@@ -161,8 +164,10 @@ body {
     color: #555;
     font-size: 16px;
     line-height: 1.6;
-    max-height: 60px; /* Fixed height for text */
-    overflow: hidden; /* Hides overflowing text */
+    max-height: 60px;
+    /* Fixed height for text */
+    overflow: hidden;
+    /* Hides overflowing text */
 }
 
 /* Button Styles */
@@ -183,18 +188,22 @@ body {
 /* Image Section */
 .image-container {
     flex: 1;
-    overflow: hidden; /* Ensures image doesn't overflow */
+    overflow: hidden;
+    /* Ensures image doesn't overflow */
 }
 
 .image-container img {
     width: 100%;
-    height: 100%; /* Makes image take full height */
-    object-fit: cover; /* Ensures the image covers the container */
+    height: 100%;
+    /* Makes image take full height */
+    object-fit: cover;
+    /* Ensures the image covers the container */
     border-radius: 10px;
 }
 
 /* Navigation Buttons */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -203,8 +212,8 @@ body {
     background-color: transparent;
     font-size: 30px;
     border: none;
-    transform: translateY(-50%); 
-    z-index: 1; 
+    transform: translateY(-50%);
+    z-index: 1;
     mix-blend-mode: difference;
 }
 
@@ -213,7 +222,7 @@ body {
 }
 
 .next {
-    right: 10px; /
+    right: 10px;/
 }
 
 /* Bullets Section - To be Above Other Elements */
@@ -222,7 +231,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    z-index: 5; /* Ensure bullets are on top */
+    z-index: 5;
+    /* Ensure bullets are on top */
     position: relative;
 }
 
@@ -258,19 +268,23 @@ body {
     line-height: 1.4;
 }
 
-.hover-card p, 
+.hover-card p,
 .hover-card h5 {
     text-align: justify;
 }
 
 .hover-card ul {
-    list-style-position: inside; /* Ensures bullet points are inside the list */
-    padding-left: 0; /* Removes default padding */
+    list-style-position: inside;
+    /* Ensures bullet points are inside the list */
+    padding-left: 0;
+    /* Removes default padding */
 }
 
 .hover-card li {
-    text-align: left; /* Aligns text to the left for list items */
-    margin-bottom: 5px; /* Adds some space between the items */
+    text-align: left;
+    /* Aligns text to the left for list items */
+    margin-bottom: 5px;
+    /* Adds some space between the items */
 }
 
 /* Contact Section */
