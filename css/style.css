@@ -104,6 +104,49 @@ header {
     margin-top: 10px;
 }
 
+@keyframes wave {
+    0% {
+        transform: rotate(0deg); /* Start position */
+    }
+    15% {
+        transform: rotate(-15deg); /* Rotate to the left */
+    }
+    30% {
+        transform: rotate(10deg); /* Rotate to the right */
+    }
+    45% {
+        transform: rotate(-10deg); /* Rotate to the left */
+    }
+    60% {
+        transform: rotate(5deg); /* Rotate to the right */
+    }
+    100% {
+        transform: rotate(0deg); /* Return to start */
+    }
+}
+
+/* Profile Container for the Image and Emoji */
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Waving Hand Emoji Styling */
+.wave-emoji {
+    position: absolute;
+    bottom: 10px; /* Adjust this value to position the emoji */
+    right: 10px; /* Adjust this value to position the emoji */
+    font-size: 30px; /* Adjust size as needed */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+}
+
+/* Show the emoji on hover */
+.profile-container:hover .wave-emoji {
+    opacity: 1; /* Show the emoji */
+    animation: wave 0.8s ease-in-out infinite; /* Rotate hand waving animation */
+}
+
 /* About Section */
 .about-section {
     text-align: center;
