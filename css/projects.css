@@ -14,18 +14,65 @@ body {
 .slideshow-container {
     position: relative;
     max-width: 900px;
-    margin: 0px auto;
-    padding: 20px;
+    margin: 0 auto;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: 500px; /* Fixed height */
+    height: 500px;
+    overflow: hidden;
+    border: 5px solid white;
 }
 
 /* Individual Slide */
 .slide {
-    display: none;
-    height: 100%; /* Ensures slide takes full height of container */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay Text (Project Name) */
+.project-name {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+/* Button (GitHub Link) */
+.btn-github {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+
+.btn-github:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Additional styling for light/dark image contrast (optional) */
+.light-image .project-name,
+.light-image .btn-github {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .slide-content {
@@ -116,10 +163,14 @@ body {
     right: 10px; /
 }
 
-/* Bullets Section */
+/* Bullets Section - To be Above Other Elements */
 .bullets {
-    text-align: center;
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 5; /* Ensure bullets are on top */
+    position: relative;
 }
 
 .bullet {
