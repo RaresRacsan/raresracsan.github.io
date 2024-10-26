@@ -258,6 +258,21 @@ body {
     line-height: 1.4;
 }
 
+.hover-card p, 
+.hover-card h5 {
+    text-align: justify;
+}
+
+.hover-card ul {
+    list-style-position: inside; /* Ensures bullet points are inside the list */
+    padding-left: 0; /* Removes default padding */
+}
+
+.hover-card li {
+    text-align: left; /* Aligns text to the left for list items */
+    margin-bottom: 5px; /* Adds some space between the items */
+}
+
 /* Contact Section */
 .contact-section {
     background-color: #7aa9f2;
