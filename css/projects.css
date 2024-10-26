@@ -147,12 +147,13 @@ body {
     position: absolute;
     top: 50%;
     padding: 0;
-    color: #333;
+    color: white;
     background-color: transparent;
     font-size: 30px;
     border: none;
     transform: translateY(-50%); 
     z-index: 1; 
+    mix-blend-mode: difference;
 }
 
 .prev {
