@@ -7,7 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f4e3;
+    background-color: #0d1117; /* GitHub dark background */
+    color: #c9d1d9; /* GitHub light text */
 }
 
 /* Slideshow Container */
@@ -15,12 +16,12 @@ body {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #161b22; /* GitHub dark section */
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     height: 500px;
     overflow: hidden;
-    border: 5px solid white;
+    border: 5px solid #0d1117; /* Darker GitHub dark border */
 }
 
 /* Individual Slide */
@@ -113,6 +114,10 @@ body {
     color: #333;
     margin-bottom: 8px;
     text-align: center;
+}
+
+.hover-card h4 {
+    color: #555;
 }
 
 /* Programming Languages Icons */
@@ -222,7 +227,7 @@ body {
 }
 
 .next {
-    right: 10px;/
+    right: 10px;
 }
 
 /* Bullets Section - To be Above Other Elements */
@@ -271,6 +276,7 @@ body {
 .hover-card p,
 .hover-card h5 {
     text-align: justify;
+    color: #555;
 }
 
 .hover-card ul {
@@ -282,6 +288,7 @@ body {
 
 .hover-card li {
     text-align: left;
+    color: #555;
     /* Aligns text to the left for list items */
     margin-bottom: 5px;
     /* Adds some space between the items */
@@ -289,8 +296,8 @@ body {
 
 /* Contact Section */
 .contact-section {
-    background-color: #7aa9f2;
-    color: white;
+    background-color: #0d1117; /* Darker GitHub dark section */
+    color: #c9d1d9; /* GitHub light text */
     padding: 30px 20px;
     text-align: center;
 }
@@ -301,7 +308,7 @@ body {
 }
 
 .contact-section ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 .contact-section li {
@@ -309,7 +316,7 @@ body {
 }
 
 .contact-section a {
-    color: white;
+    color: #58a6ff; /* GitHub blue link */
     text-decoration: none;
 }
 
