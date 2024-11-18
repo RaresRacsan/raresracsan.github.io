@@ -1,0 +1,262 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1117; /* GitHub dark background */
+}
+
+/* Header styling */
+header {
+    position: sticky;
+    float: right;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: #0d1117; /* Darker GitHub dark header */
+    border: 2px solid #c9d1d9;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    color: #c9d1d9; /* GitHub light text */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: #21262d; /* GitHub hover background */
+    border-radius: 20px;
+}
+
+/* Hero section with dark theme */
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    background-color: #161b22; /* GitHub dark section */
+    color: #c9d1d9; /* GitHub light text */
+    margin-bottom: 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #f0f6fc; /* GitHub light text */
+}
+
+.hero p {
+    font-size: 18px;
+    color: #8b949e; /* GitHub medium gray */
+}
+
+/* Button styling with GitHub colors */
+.hero .button {
+    margin-top: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #238636; /* GitHub green */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.hero .button:hover {
+    background-color: #2ea043; /* Darker GitHub green on hover */
+}
+
+.hero .button i {
+    margin-left: 10px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #c9d1d9; /* GitHub light border */
+    margin-top: 10px;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg); /* Start position */
+    }
+    15% {
+        transform: rotate(-15deg); /* Rotate to the left */
+    }
+    30% {
+        transform: rotate(10deg); /* Rotate to the right */
+    }
+    45% {
+        transform: rotate(-10deg); /* Rotate to the left */
+    }
+    60% {
+        transform: rotate(5deg); /* Rotate to the right */
+    }
+    100% {
+        transform: rotate(0deg); /* Return to start */
+    }
+}
+
+/* Profile Container for the Image and Emoji */
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Waving Hand Emoji Styling */
+.wave-emoji {
+    position: absolute;
+    bottom: 10px; /* Adjust this value to position the emoji */
+    right: 10px; /* Adjust this value to position the emoji */
+    font-size: 30px; /* Adjust size as needed */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+}
+
+/* Show the emoji on hover */
+.profile-container:hover .wave-emoji {
+    opacity: 1; /* Show the emoji */
+    animation: wave 0.8s ease-in-out infinite; /* Rotate hand waving animation */
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    height: 100vh; /* Full-screen height */
+    padding: 80px 20px;
+    background-color: #0d1117; /* Darker GitHub dark section */
+    color: #c9d1d9; /* GitHub light text */
+    margin-bottom: 0;
+}
+
+.about-section h2 {
+    margin-top: 150px;
+    font-size: 36px;
+    color: #f0f6fc; /* GitHub light text */
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #8b949e; /* GitHub medium gray */
+}
+
+/* Button styling for About Section */
+.about-section .button {
+    margin-top: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #238636; /* GitHub green */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.about-section .button:hover {
+    background-color: #2ea043; /* Darker GitHub green on hover */
+}
+
+/* Projects Section */
+.projects-section {
+    text-align: center;
+    height: 100vh; /* Full-screen height */
+    padding: 80px 20px;
+    background-color: #161b22; /* GitHub dark section */
+    color: #c9d1d9; /* GitHub light text */
+    margin-bottom: 0;
+}
+
+.projects-section h2 {
+    margin-top: 150px;
+    font-size: 36px;
+    color: #f0f6fc; /* GitHub light text */
+}
+
+.projects-section p {
+    font-size: 18px;
+    color: #8b949e; /* GitHub medium gray */
+}
+
+/* Button styling for Projects Section */
+.projects-section .button {
+    margin-top: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #238636; /* GitHub green */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.projects-section .button:hover {
+    background-color: #2ea043; /* Darker GitHub green on hover */
+}
+
+.about-section .button i,
+.projects-section .button i {
+    margin-left: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #0d1117; /* Darker GitHub dark section */
+    color: #c9d1d9; /* GitHub light text */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+}
+
+.contact-section li {
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    color: #58a6ff; /* GitHub blue link */
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
