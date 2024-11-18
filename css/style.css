@@ -451,8 +451,8 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 20px;
@@ -539,17 +539,44 @@ header {
 
 /* Button Styles */
 .btn-github {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #0d1117;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
+    padding: 10px 20px; /* Make the button smaller */
+    border: unset;
+    border-radius: 15px;
+    color: #212121; /* Text color */
+    z-index: 1;
+    background: #e8e8e8; /* Default background color */
+    position: absolute; /* Position the button absolutely */
+    right: 20px; /* Move it to the right side */
+    font-weight: 1000;
+    font-size: 15px; /* Slightly smaller text */
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.btn-github::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121; /* Dark background */
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
 }
 
 .btn-github:hover {
-    background-color: #555;
+    color: #e8e8e8; /* Change text color on hover */
+    background-color: #212121; /* Light to dark background color change */
+}
+
+.btn-github:hover::before {
+    width: 100%; /* Expand the dark background on hover */
 }
 
 /* Image Section */
