@@ -412,25 +412,6 @@ header {
     z-index: 2;
 }
 
-/* Button (GitHub Link) */
-.btn-github {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    z-index: 2;
-    transition: background-color 0.3s;
-}
-
-.btn-github:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 /* Additional styling for light/dark image contrast (optional) */
 .light-image .project-name,
 .light-image .btn-github {
@@ -444,6 +425,50 @@ header {
     align-items: center;
     height: 100%;
     /* Ensures slide content fills the height */
+}
+
+/* Button Styles */
+.btn-github {
+    padding: 10px 20px; /* Make the button smaller */
+    border: unset;
+    border-radius: 15px;
+    color: #212121; /* Text color */
+    z-index: 1;
+    background: #e8e8e8; /* Default background color */
+    position: absolute; /* Position the button absolutely */
+    right: 15px; /* Move it to the right side */
+    bottom: 15px; /* Move it to the bottom */
+    font-weight: 1000;
+    font-size: 15px; /* Slightly smaller text */
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.btn-github::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121; /* Dark background */
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+}
+
+.btn-github:hover {
+    color: #e8e8e8; /* Change text color on hover */
+    background-color: #212121; /* Light to dark background color change */
+}
+
+.btn-github:hover::before {
+    width: 100%; /* Expand the dark background on hover */
 }
 
 /* Hover Card Styling */
@@ -535,48 +560,6 @@ header {
     /* Fixed height for text */
     overflow: hidden;
     /* Hides overflowing text */
-}
-
-/* Button Styles */
-.btn-github {
-    padding: 10px 20px; /* Make the button smaller */
-    border: unset;
-    border-radius: 15px;
-    color: #212121; /* Text color */
-    z-index: 1;
-    background: #e8e8e8; /* Default background color */
-    position: absolute; /* Position the button absolutely */
-    right: 20px; /* Move it to the right side */
-    font-weight: 1000;
-    font-size: 15px; /* Slightly smaller text */
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-    overflow: hidden;
-}
-
-.btn-github::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: #212121; /* Dark background */
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-}
-
-.btn-github:hover {
-    color: #e8e8e8; /* Change text color on hover */
-    background-color: #212121; /* Light to dark background color change */
-}
-
-.btn-github:hover::before {
-    width: 100%; /* Expand the dark background on hover */
 }
 
 /* Image Section */
